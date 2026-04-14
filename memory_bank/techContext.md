@@ -1,35 +1,42 @@
 # Tech Context: BiteCircuit
 
 ## Технологический стек
-На данном этапе технологический стек находится в стадии определения.
-
-## Предполагаемые технологии
 
 ### Пакетный менеджер
 - **bun** - согласно требованиям AGENTS.md
 
-### Frontend (предварительно)
-- React / Next.js для веб-приложения
-- TypeScript
-- PWA для мобильного опыта
-- Telegram Mini App SDK
+### Frontend
+- **Next.js** - React фреймворк с SSR/SSG
+- **TypeScript (TSX)** - типизированный JavaScript
+- **Tailwind CSS** - utility-first CSS фреймворк
+- **shadcn/ui** - компонентная библиотека
+- **PWA** - для мобильного опыта
+- **Telegram Mini App SDK** - для интеграции с Telegram
 
-### Backend (предварительно)
-- Node.js / Bun
-- TypeScript
-- REST API / GraphQL
+### Backend
+- **Supabase** - Backend-as-a-Service
+  - PostgreSQL база данных
+  - Realtime subscriptions
+  - Storage для файлов
+  - Edge Functions
+  - Row Level Security (RLS)
 
-### База данных (предварительно)
-- PostgreSQL для основных данных
-- Redis для кэширования и очередей
+### Аутентификация
+- **NextAuth.js** - аутентификация для Next.js
+  - Интеграция с Supabase
+  - OAuth провайдеры
+  - Session management
 
-### Инфраструктура
-- Docker для контейнеризации
-- CI/CD pipeline (требуется определить)
+### Хостинг и деплой
+- **Vercel** - хостинг для Next.js приложения
+  - Автоматический деплой из GitHub
+  - Edge Functions
+  - Analytics
 
 ### Инструменты разработки
 - **Biome** - для линтинга и форматирования кода (согласно AGENTS.md)
-- Git для контроля версий
+- **Git** - контроль версий
+- **GitHub** - репозиторий и CI/CD
 
 ## Ограничения
 - Использование bun как пакетного менеджера (обязательно)
@@ -37,9 +44,11 @@
 - Сервер разработки управляется пользователем
 
 ## Окружение
-- Разработка: локальная среда
-- Staging: требуется настройка
-- Production: требуется настройка
+- **Development**: локальная среда с Supabase local development
+- **Preview**: Vercel preview deployments
+- **Production**: Vercel production + Supabase production
 
 ## CI/CD
-Будет определено после выбора платформы хостинга.
+- GitHub Actions для автоматизации
+- Vercel автоматический деплой при push в main
+- Biome проверки в pre-commit hooks
