@@ -10,16 +10,33 @@
 - ✅ Инициализирована система Memory Bank
 - ✅ Созданы базовые файлы документации проекта
 - ✅ Скачан и применен актуальный AGENTS.md
+- ✅ Инициализирован git репозиторий
+- ✅ Определен технологический стек (Next.js, Supabase, Tailwind, shadcn/ui)
+- ✅ Создана архитектурная документация в docs/README.md
+- ✅ Обновлен techContext.md с финальным стеком
+- ✅ Настроен git пользователь (Bosin1337)
 
 ## Текущие задачи
-- Инициализация git репозитория
-- Создание docs/README.md с архитектурой
-- Определение финального технологического стека
+- Инициализация Next.js проекта
+- Настройка Tailwind CSS и shadcn/ui
+- Настройка Supabase
+- Настройка NextAuth.js
 
 ## Known Issues
 Нет известных проблем на данном этапе.
 
 ## Changelog
+
+### 2026-04-16
+- Определен финальный технологический стек:
+  - Frontend: Next.js (TSX), Tailwind CSS, shadcn/ui
+  - Backend: Supabase (PostgreSQL)
+  - Auth: NextAuth.js
+  - Hosting: Vercel
+- Создана архитектурная документация в docs/README.md
+- Обновлен techContext.md с детальным описанием стека
+- Настроен git пользователь Bosin1337
+- Очищен git credential manager
 
 ### 2026-04-14
 - Инициализация проекта BiteCircuit
@@ -34,5 +51,5 @@
   - progress.md
 
 ## Контроль изменений
-**last_checked_commit:** a595977
-**last_update:** 2026-04-14T13:30:03Z
+**last_checked_commit:** e9ffab1
+**last_update:** 2026-04-16T13:10:57Z
