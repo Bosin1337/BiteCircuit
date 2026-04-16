@@ -15,17 +15,32 @@
 - ✅ Создана архитектурная документация в docs/README.md
 - ✅ Обновлен techContext.md с финальным стеком
 - ✅ Настроен git пользователь (Bosin1337)
+- ✅ Инициализирован Next.js проект в директории app/
+- ✅ Настроен Biome для линтинга
+- ✅ Установлены shadcn/ui компоненты
+- ✅ Установлены Supabase и NextAuth.js
+- ✅ Созданы базовые типы и структура проекта
 
 ## Текущие задачи
-- Инициализация Next.js проекта
-- Настройка Tailwind CSS и shadcn/ui
-- Настройка Supabase
-- Настройка NextAuth.js
+- Настройка Supabase проекта (требуется создать проект на supabase.com)
+- Настройка переменных окружения
+- Создание API маршрутов
+- Верстка основных страниц
 
 ## Known Issues
 Нет известных проблем на данном этапе.
 
 ## Changelog
+
+### 2026-04-16
+- Инициализирован Next.js проект в директории app/
+- Установлены зависимости: Biome, Supabase, NextAuth
+- Настроен Biome для линтинга и форматирования
+- Установлены shadcn/ui компоненты (button, card, input, label, select, sheet, avatar, dropdown-menu, separator, slider, tabs, sonner)
+- Созданы TypeScript типы в src/types/index.ts
+- Создан Supabase клиент в src/lib/supabase.ts
+- Создан базовый API маршрут NextAuth.js
+- Создана структура проекта (lib, components, hooks, types, constants, actions)
 
 ### 2026-04-16
 - Определен финальный технологический стек:
@@ -51,5 +66,5 @@
   - progress.md
 
 ## Контроль изменений
-**last_checked_commit:** e9ffab1
-**last_update:** 2026-04-16T13:10:57Z
+**last_checked_commit:** a342bfb
+**last_update:** 2026-04-16T14:30:00Z

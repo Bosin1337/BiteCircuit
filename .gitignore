@@ -8,3 +8,9 @@ build/
 coverage/
 .vscode/
 .idea/
+
+# Next.js
+app/node_modules/
+app/.next/
+app/out/
+app/.env*.local
