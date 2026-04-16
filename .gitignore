@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# biome
+/biome
+
 # production
 /build
 
